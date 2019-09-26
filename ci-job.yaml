@@ -1,0 +1,5 @@
+on-pull-requests2:
+  stage: test
+  script: echo 'this job should also on pull requests'
+  only:
+    - external_pull_requests
